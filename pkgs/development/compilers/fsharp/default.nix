@@ -4,11 +4,11 @@
 
 stdenv.mkDerivation rec {
   name = "fsharp-${version}";
-  version = "4.0.1.1";
+  version = "4.1.8";
 
   src = fetchurl {
     url = "https://github.com/fsharp/fsharp/archive/${version}.tar.gz";
-    sha256 = "0mvmvwwpl4zq0yvgzdizww8l9azvlrc82xm32nz1fi1nw8x5qfqk";
+    sha256 = "4b66e20cefcd6ee41e078e9e27641f0fdf72067151c1cbbc12e4c55d46ea01e8";
   };
 
   buildInputs = [ mono pkgconfig dotnetbuildhelpers autoconf automake which ];
